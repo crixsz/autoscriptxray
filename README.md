@@ -1,13 +1,11 @@
 # Autoscript | Free To Use For All
-Tolong di Fork atau "use this template" 🙏🙏
 
-Untuk Shadowsocks rekomendasi menggunakan aplikasi NetMod Syna
-
+For Shadowsocks recommended to use Netmod Syna
 # Feature
 
 Route Traffic to WARP
 
-Daftar Website rute dialihkan ke WARP
+Websites that has been routed to WARP
 - ChatGPT
 - Google
 - YouTube
@@ -17,7 +15,7 @@ Daftar Website rute dialihkan ke WARP
 - Facebook
 - CloudFlare
 
-![b](https://raw.githubusercontent.com/dugong-lewat/autoscript2/main/Screenshot_20240127-232739%7E2.png)
+![Preview](https://raw.githubusercontent.com/crixsz/autoscriptxray/main/preview.png)
 
 # Service
 |  SERVICE  |  PORT  |
@@ -44,11 +42,7 @@ Daftar Website rute dialihkan ke WARP
 | DNS Setting | ✅ |
 
 # Link Instalasi
-*Only Ubuntu Min Ver 20.04
+* Only Ubuntu Min Ver 20.04
 ```
-bash -c "$(wget -qO- s.id/1YIob)"
+TODO
 ```
-# Donasi
-Donasi untuk perpanjang Layanan WARP+ 😊😊
-
-https://saweria.co/dugonglewat
