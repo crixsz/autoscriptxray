@@ -62,7 +62,7 @@ echo -e "                 ${WB}----- [ Utility ] -----${NC}                "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e " ${MB}[7]${NC} ${YB}Log Create Account${NC}  ${MB}[12]${NC} ${YB}DNS Setting${NC}"
 echo -e " ${MB}[8]${NC} ${YB}Speedtest${NC}           ${MB}[13]${NC} ${YB}Check DNS Status${NC}"
-echo -e " ${MB}[9]${NC} ${YB}Change Domain${NC}"
+echo -e " ${MB}[9]${NC} ${YB}Change Domain${NC}       ${MB}[14]${NC} ${YB}Restart All Services${NC}"
 echo -e " ${MB}[10]${NC} ${YB}Cert Acme.sh${NC}"
 echo -e " ${MB}[11]${NC} ${YB}About Script${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
@@ -82,7 +82,7 @@ case $opt in
 10) clear ; certxray ;;
 11) clear ; about ;;
 12) clear ; changer ;;
-13) clear ;
+13) clear ; restartall ;;
 resolvectl status
 echo ""
 echo ""
