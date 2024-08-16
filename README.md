@@ -14,6 +14,8 @@ Websites that has been routed to WARP
 - Zoom
 - Facebook
 - CloudFlare
+- Reddit (Bypass DO)
+- Riotgames (Bypass DO)
 
 ![Preview](https://raw.githubusercontent.com/crixsz/autoscriptxray/main/preview.png)
 
