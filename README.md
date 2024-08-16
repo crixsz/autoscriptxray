@@ -46,5 +46,5 @@ Websites that has been routed to WARP
 # Installation Link
 * Only Ubuntu Min Ver 20.04
 ```
-rm setup.sh && wget https://raw.githubusercontent.com/crixsz/autoscriptxray/main/setup.sh && chmod +x setup.sh && bash setup.sh
+wget https://raw.githubusercontent.com/crixsz/autoscriptxray/main/setup.sh && chmod +x setup.sh && bash setup.sh
 ```
