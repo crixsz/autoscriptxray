@@ -43,8 +43,8 @@ Websites that has been routed to WARP
 | Auto Delete Expired User| ✅ |
 | DNS Setting | ✅ |
 
-# Link Instalasi
+# Installation Link
 * Only Ubuntu Min Ver 20.04
 ```
-TODO
+rm setup.sh && wget https://raw.githubusercontent.com/crixsz/autoscriptxray/main/setup.sh && chmod +x setup.sh && bash setup.sh
 ```
