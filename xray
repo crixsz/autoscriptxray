@@ -151,7 +151,9 @@ cat > /usr/local/etc/xray/config.json << END
               "geosite:spotify",
               "geosite:zoom",
               "geosite:facebook",
-              "geosite:cloudflare"
+              "geosite:cloudflare",
+              "reddit.com",
+              "riotgames.com"
               ],
               "outboundTag": "WARP"
         }
