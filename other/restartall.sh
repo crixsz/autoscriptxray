@@ -12,4 +12,9 @@ echo -e "${BB}——————————————————————
 echo -e "               ${WB}Restart VPN Services${NC}              "
 echo -e "${BB}————————————————————————————————————————————————————${NC}"
 echo -e "${YB} Restarting Xray ....${NC}"
+systemctl restart xray
+sleep 5
+echo -e "${YB} Restarting Nginx ....${NC}"
+systemctl restart nginx
+sleep 5
 echo -e "${BB}————————————————————————————————————————————————————${NC}"
