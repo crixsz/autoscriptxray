@@ -67,7 +67,7 @@ clear
 touch /usr/local/etc/xray/domain
 echo -e "${YB}Input Domain${NC} "
 echo " "
-read -rp "Input domain kamu : " -e dns
+read -rp "Enter your domain : " -e dns
 if [ -z $dns ]; then
 echo -e "Nothing input for domain!"
 else
