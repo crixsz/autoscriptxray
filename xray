@@ -1015,7 +1015,8 @@ chmod 644 /root/.profile
 clear
 echo ""
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
-echo -e "                  ${WB}XRAY SCRIPT BY DUGONG${NC}"
+echo -e "                  ${WB}XRAY SCRIPT BY CRIXSZ${NC}"
+echo -e "                  ${WB}CREDIT TO: DUGONG / SYIHABX ${NC}"
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
 echo -e "                 ${WB}»»» Protocol Service «««${NC}  "
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
