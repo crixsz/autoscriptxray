@@ -65,7 +65,7 @@ mkdir -p /var/www/html/allxray >> /dev/null 2>&1
 systemctl restart nginx
 clear
 touch /usr/local/etc/xray/domain
-echo -e "${YB}Input Domain${NC} "
+echo -e "${YB}[ Acme.sh Cert Generator]${NC} "
 echo " "
 read -rp "Enter your domain : " -e dns
 if [ -z $dns ]; then
