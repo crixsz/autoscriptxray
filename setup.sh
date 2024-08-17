@@ -999,7 +999,7 @@ chmod +x certxray
 chmod +x about
 chmod +x clear-log
 chmod +x changer
-chmpd +x restartall
+chmod +x restartall
 
 cd
 echo "0 0 * * * root xp" >> /etc/crontab

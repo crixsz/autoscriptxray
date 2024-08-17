@@ -82,9 +82,9 @@ case $opt in
 10) clear ; certxray ;;
 11) clear ; about ;;
 12) clear ; changer ;;
-13) clear ; restartall ;;
-14) clear ;
-resolvectl status
+13) clear ; resolvectl status ;;
+14) clear ; restartall ;;
+15) clear ;
 echo ""
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
