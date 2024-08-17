@@ -83,6 +83,7 @@ case $opt in
 11) clear ; about ;;
 12) clear ; changer ;;
 13) clear ; restartall ;;
+14) clear ;
 resolvectl status
 echo ""
 echo ""
