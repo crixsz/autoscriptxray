@@ -937,7 +937,7 @@ wget -q -O certxray "https://${GITHUB}/other/certxray.sh"
 wget -q -O about "https://${GITHUB}/other/about.sh"
 wget -q -O clear-log "https://${GITHUB}/other/clear-log.sh"
 wget -q -O changer "https://${GITHUB}/other/changer.sh"
-wget -q -O changer "https://${GITHUB}/other/restartall.sh"
+wget -q -O restartall "https://${GITHUB}/other/restartall.sh"
 
 echo -e "${GB}[ INFO ]${NC} ${YB}Download All Menu Done${NC}"
 sleep 2
