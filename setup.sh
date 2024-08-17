@@ -860,7 +860,7 @@ sudo iptables -A INPUT -p tcp --dport 6881:6889 -j DROP
 # Blokir lalu lintas torrent dengan modul string
 sudo iptables -A INPUT -p tcp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
 sudo iptables -A INPUT -p udp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
-cd /usr/bin
+cd /usr/local/bin
 GITHUB=raw.githubusercontent.com/crixsz/autoscriptxray/main
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Main Menu${NC}"
 wget -q -O menu "https://${GITHUB}/menu/menu.sh"
