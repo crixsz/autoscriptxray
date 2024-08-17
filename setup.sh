@@ -90,7 +90,7 @@ fi
 export CF_Key="${CF_GlobalKey}"
 export CF_Email=${CF_AccountEmail}
 cd .acme.sh
-bash acme.sh --issue --dns dns_cf -d $domain --keylength ec-256 --fullchain-file /usr/local/etc/xray/fullchain.crt --key-file /usr/local/etc/xray/private.key --standalone --force
+bash acme.sh --issue -d $domain --keylength ec-256 --fullchain-file /usr/local/etc/xray/fullchain.crt --key-file /usr/local/etc/xray/private.key --standalone --force
 chmod 745 /usr/local/etc/xray/private.key
 clear
 echo -e "${GB}[ INFO ]${NC} ${YB}Setup Nginx & Xray Conf${NC}"
