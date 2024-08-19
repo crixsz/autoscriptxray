@@ -145,7 +145,6 @@ cat > /usr/local/etc/xray/config.json << END
            "type": "field",
            "domain": [
               "geosite:openai",
-              "geosite:google",
               "geosite:youtube",
               "geosite:netflix",
               "geosite:spotify",
