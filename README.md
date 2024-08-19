@@ -44,7 +44,7 @@ Websites that has been routed to WARP
 | DNS Setting | ✅ |
 
 # Installation Link
-* Supports:
+Supported OS:
 - Ubuntu 20.04
 - Debian 11
 
