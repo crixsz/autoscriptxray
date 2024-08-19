@@ -44,7 +44,10 @@ Websites that has been routed to WARP
 | DNS Setting | ✅ |
 
 # Installation Link
-* Only Ubuntu Min Ver 20.04
+* Supports:
+- Ubuntu 20.04
+- Debian 11
+
 ```
 wget https://raw.githubusercontent.com/crixsz/autoscriptxray/main/setup.sh && chmod +x setup.sh && bash setup.sh
 ```
