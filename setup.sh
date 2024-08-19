@@ -1008,7 +1008,9 @@ chmod +x clear-log
 chmod +x changer
 chmod +x restartall
 
+clear
 cd
+echo -e "${GB}[ INFO ]${NC} ${YB}Setting Crontab for User account expiry${NC}"
 echo "0 0 * * * root xp" >> /etc/crontab
 echo "*/3 * * * * root clear-log" >> /etc/crontab
 systemctl restart cron
