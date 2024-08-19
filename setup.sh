@@ -14,7 +14,7 @@ echo -e "${WB}Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 
 }
 start=$(date +%s)
 apt update -y
-apt upgrade -y
+# apt upgrade -y
 apt install socat netfilter-persistent -y
 apt install vnstat lsof fail2ban -y
 apt install curl sudo -y
