@@ -853,12 +853,20 @@ systemctl restart xray
 echo -e "${GB}[ INFO ]${NC} ${YB}Setup Done${NC}"
 sleep 1
 clear
-# Blokir lalu lintas torrent (BitTorrent)
-sudo iptables -A INPUT -p udp --dport 6881:6889 -j DROP
-sudo iptables -A INPUT -p tcp --dport 6881:6889 -j DROP
-# Blokir lalu lintas torrent dengan modul string
-sudo iptables -A INPUT -p tcp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
-sudo iptables -A INPUT -p udp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
+#!/bin/bash
+# Check if the system is Debian-based
+if grep -q "Debian" /etc/os-release; then
+    iptables -A INPUT -p udp --dport 6881:6889 -j DROP
+    iptables -A INPUT -p tcp --dport 6881:6889 -j DROP
+    iptables -A INPUT -p tcp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
+    iptables -A INPUT -p udp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
+else
+    sudo iptables -A INPUT -p udp --dport 6881:6889 -j DROP
+    sudo iptables -A INPUT -p tcp --dport 6881:6889 -j DROP
+    sudo iptables -A INPUT -p tcp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
+    sudo iptables -A INPUT -p udp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
+fi
+
 cd /usr/local/bin
 GITHUB=raw.githubusercontent.com/crixsz/autoscriptxray/main
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Main Menu${NC}"
