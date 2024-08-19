@@ -49,5 +49,5 @@ Supported OS:
 - Debian 11
 
 ```
-wget https://raw.githubusercontent.com/crixsz/autoscriptxray/main/setup.sh && chmod +x setup.sh && bash setup.sh
+wget https://raw.githubusercontent.com/crixsz/autoscriptxray/development/setup.sh && chmod +x setup.sh && bash setup.sh
 ```
