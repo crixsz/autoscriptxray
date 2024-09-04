@@ -13,15 +13,19 @@ secs_to_human() {
 echo -e "${WB}Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds${NC}"
 }
 start=$(date +%s)
-apt update -y
+clear
+echo -e "${GB}[ INFO ]${NC} ${YB}Running APT update ${NC}"
+apt update -y >> /dev/null
 # apt upgrade -y
-apt install socat netfilter-persistent -y
-apt install vnstat lsof fail2ban -y
-apt install curl sudo -y
-apt install screen cron screenfetch -y
+clear
+echo -e "${GB}[ INFO ]${NC} ${YB}Running APT install necessary packages${NC}"
+apt install socat netfilter-persistent -y >> /dev/null
+apt install vnstat lsof fail2ban -y >> /dev/null
+apt install curl sudo -y >> /dev/null
+apt install screen cron screenfetch -y >> /dev/null
 mkdir /user >> /dev/null 2>&1
 mkdir /tmp >> /dev/null 2>&1
-apt install resolvconf network-manager dnsutils bind9 -y
+apt install resolvconf network-manager dnsutils bind9 -y >> /dev/null
 cat > /etc/systemd/resolved.conf << END
 [Resolve]
 DNS=8.8.8.8 8.8.4.4
