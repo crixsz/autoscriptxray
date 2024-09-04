@@ -101,7 +101,7 @@ echo -e "${GB}[ INFO ]${NC} ${YB}Setup Nginx & Xray Conf${NC}"
 cipher="aes-128-gcm"
 cipher2="2022-blake3-aes-128-gcm"
 uuid=$(cat /proc/sys/kernel/random/uuid)
-pwtr=$(openssl rand -hex 4)
+pwtr="trojanaku"
 pwss=$(echo $RANDOM | md5sum | head -c 6; echo;)
 userpsk=$(openssl rand -base64 16)
 serverpsk=$(openssl rand -base64 16)
