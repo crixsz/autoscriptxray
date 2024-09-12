@@ -15,6 +15,7 @@ echo -e "${WB}Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 
 start=$(date +%s)
 clear
 # apt upgrade -y
+mkdir /usr/local/etc/xray
 touch /usr/local/etc/xray/domain
 clear
 echo -e "${YB}[ Acme.sh Cert Generator]${NC} "
