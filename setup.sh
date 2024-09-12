@@ -14,8 +14,6 @@ echo -e "${WB}Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 
 }
 start=$(date +%s)
 clear
-echo -e "${GB}[ INFO ]${NC} ${YB}Running APT update ${NC}"
-apt update -y >> /dev/null
 # apt upgrade -y
 touch /usr/local/etc/xray/domain
 clear
@@ -28,6 +26,8 @@ else
 echo "$dns" > /usr/local/etc/xray/domain
 echo "DNS=$dns" > /var/lib/dnsvps.conf
 fi
+echo -e "${GB}[ INFO ]${NC} ${YB}Running APT update ${NC}"
+apt update -y >> /dev/null
 echo -e "${GB}[ INFO ]${NC} ${YB}Running APT install necessary packages${NC}"
 apt install socat netfilter-persistent -y >> /dev/null
 apt install vnstat lsof fail2ban -y >> /dev/null
