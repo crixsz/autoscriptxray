@@ -17,6 +17,7 @@ clear
 echo -e "${GB}[ INFO ]${NC} ${YB}Running APT update ${NC}"
 apt update -y >> /dev/null
 # apt upgrade -y
+touch /usr/local/etc/xray/domain
 clear
 echo -e "${YB}[ Acme.sh Cert Generator]${NC} "
 echo " "
@@ -76,8 +77,6 @@ mkdir -p /var/www/html/ss >> /dev/null 2>&1
 mkdir -p /var/www/html/ss2022 >> /dev/null 2>&1
 mkdir -p /var/www/html/allxray >> /dev/null 2>&1
 systemctl restart nginx
-clear
-touch /usr/local/etc/xray/domain
 clear
 systemctl stop nginx
 systemctl stop xray
