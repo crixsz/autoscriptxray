@@ -18,6 +18,15 @@ echo -e "${GB}[ INFO ]${NC} ${YB}Running APT update ${NC}"
 apt update -y >> /dev/null
 # apt upgrade -y
 clear
+echo -e "${YB}[ Acme.sh Cert Generator]${NC} "
+echo " "
+read -rp "Enter your domain : " -e dns
+if [ -z $dns ]; then
+echo -e "Nothing input for domain!"
+else
+echo "$dns" > /usr/local/etc/xray/domain
+echo "DNS=$dns" > /var/lib/dnsvps.conf
+fi
 echo -e "${GB}[ INFO ]${NC} ${YB}Running APT install necessary packages${NC}"
 apt install socat netfilter-persistent -y >> /dev/null
 apt install vnstat lsof fail2ban -y >> /dev/null
@@ -69,15 +78,6 @@ mkdir -p /var/www/html/allxray >> /dev/null 2>&1
 systemctl restart nginx
 clear
 touch /usr/local/etc/xray/domain
-echo -e "${YB}[ Acme.sh Cert Generator]${NC} "
-echo " "
-read -rp "Enter your domain : " -e dns
-if [ -z $dns ]; then
-echo -e "Nothing input for domain!"
-else
-echo "$dns" > /usr/local/etc/xray/domain
-echo "DNS=$dns" > /var/lib/dnsvps.conf
-fi
 clear
 systemctl stop nginx
 systemctl stop xray
