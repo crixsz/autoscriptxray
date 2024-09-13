@@ -6,14 +6,6 @@ For Shadowsocks recommended to use Netmod Syna
 Route Traffic to WARP
 
 Websites that has been routed to WARP
-- ChatGPT
-- Google
-- YouTube
-- Netflix
-- Spotify
-- Zoom
-- Facebook
-- CloudFlare
 - Reddit (Bypass DO)
 - Riotgames (Bypass DO)
 
