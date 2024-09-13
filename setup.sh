@@ -33,7 +33,7 @@ echo -e "${GB}[ INFO ]${NC} ${YB}Running APT install necessary packages${NC}"
 apt install socat netfilter-persistent -y >> /dev/null
 apt install vnstat lsof fail2ban -y >> /dev/null
 apt install curl sudo -y >> /dev/null
-apt install screen cron screenfetch -y >> /dev/null
+apt install screen cron -y >> /dev/null
 mkdir /user >> /dev/null 2>&1
 mkdir /tmp >> /dev/null 2>&1
 apt install resolvconf network-manager dnsutils bind9 -y >> /dev/null
@@ -1019,7 +1019,6 @@ fi
 fi
 mesg n || true
 clear
-menu
 END
 chmod 644 /root/.profile
 clear
