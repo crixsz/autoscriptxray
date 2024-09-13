@@ -149,7 +149,8 @@ cat > /usr/local/etc/xray/config.json << END
            "type": "field",
            "domain": [
               "reddit.com",
-              "riotgames.com"
+              "riotgames.com",
+              "icanhazip.com"
               ],
               "outboundTag": "WARP"
         }
