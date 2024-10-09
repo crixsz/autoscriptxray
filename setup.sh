@@ -18,6 +18,7 @@ apt update -y
 apt install socat netfilter-persistent -y
 apt install vnstat lsof fail2ban -y
 apt install curl sudo -y
+apt install bsdmainutils -y
 apt install screen cron screenfetch -y
 mkdir /user >> /dev/null 2>&1
 mkdir /tmp >> /dev/null 2>&1
